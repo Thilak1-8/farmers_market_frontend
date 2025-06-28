@@ -22,7 +22,7 @@ const FarmerRegistration = () => {
 
     try {
       console.log('Sending registration request:', { farmerID, name, location, contactInfo });
-      const response = await fetch('http://localhost:5000/signups/profile', {
+      const response = await fetch('https://farmers-market-backend-609k.onrender.com/signups/profile', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

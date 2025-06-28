@@ -23,7 +23,7 @@ const LoginPage = () => {
 
     try {
       console.log('Sending login request:', { email, password });
-      const response = await fetch('http://localhost:5000/signups/login', {
+      const response = await fetch('https://farmers-market-backend-609k.onrender.com/signups/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -33,7 +33,7 @@ const LoginPage = () => {
       console.log('Login response:', data);
       if (response.ok) {
         localStorage.setItem('token', data.token);
-        const profileResponse = await fetch('http://localhost:5000/signups/profile', {
+        const profileResponse = await fetch('https://farmers-market-backend-609k.onrender.com/signups/profile', {
           headers: { Authorization: `Bearer ${data.token}` },
         });
         const profileData = await profileResponse.json();

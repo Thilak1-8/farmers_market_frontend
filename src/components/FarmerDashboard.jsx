@@ -18,7 +18,7 @@ const FarmerDashboard = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/signups/products', {
+        const response = await fetch('https://farmers-market-backend-609k.onrender.com/signups/products', {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
         const data = await response.json();
@@ -38,7 +38,7 @@ const FarmerDashboard = () => {
   const handleAddProduct = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/signups/products', {
+      const response = await fetch('https://farmers-market-backend-609k.onrender.com/signups/products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const FarmerDashboard = () => {
   const handleEditProduct = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/signups/products/${editProduct._id}`, {
+      const response = await fetch(`https://farmers-market-backend-609k.onrender.com/signups/products/${editProduct._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

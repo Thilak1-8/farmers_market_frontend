@@ -10,7 +10,7 @@ const Displayfarmer = () => {
   useEffect(() => {
     const fetchFarmers = async () => {
       try {
-        const response = await fetch('http://localhost:5000/signups/farmers');
+        const response = await fetch('https://farmers-market-backend-609k.onrender.com/signups/farmers');
         const data = await response.json();
         if (response.ok) {
           setFarmers(data);

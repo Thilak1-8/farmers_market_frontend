@@ -13,7 +13,7 @@ const AddProduct = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/signups/products', {
+      const response = await fetch('https://farmers-market-backend-609k.onrender.com/signups/products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
