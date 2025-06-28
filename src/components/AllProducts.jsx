@@ -9,7 +9,7 @@ const AllProducts = () => {
   useEffect(() => {
     const fetchAllProducts = async () => {
       try {
-        const response = await fetch('https://farmers-market-backend-609k.onrender.com/all-products');
+        const response = await fetch('https://farmers-market-backend-609k.onrender.com/signups/all-products');
         const data = await response.json();
         if (response.ok) {
           // Group products by farmerID
