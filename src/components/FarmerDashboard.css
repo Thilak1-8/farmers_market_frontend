@@ -1,0 +1,95 @@
+.farmer-dashboard {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/2.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color:black;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.dashboard-header h1 {
+  color: #2c5e2e;
+  font-weight: 600;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-signin {
+  max-width: 400px;
+}
+
+.form-signin h2 {
+  color: #2c5e2e;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.form-signin .form-control {
+  border: 1px solid #2c5e2e;
+  border-radius: 5px;
+}
+
+.form-signin .form-control:focus {
+  border-color: #4a8a4c;
+  box-shadow: 0 0 5px rgba(74, 138, 76, 0.5);
+}
+
+.form-signin textarea.form-control {
+  height: 100px;
+  resize: vertical;
+}
+
+.farmer-btn {
+  background-color: #28a745;
+  border-color: #28a745;
+  margin-right: 10px;
+}
+
+.farmer-btn:hover {
+  background-color: #218838;
+  border-color: #218838;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.text-danger {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.product-list {
+  margin-top: 20px;
+}
+
+.product-list h2 {
+  color: #2c5e2e;
+  font-weight: 600;
+}
+
+.table {
+  background: #fff;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
